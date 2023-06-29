@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -16,7 +17,9 @@ export default function RootLayout({
   const header = (
     <header>
       <div>
-        <h1>Johan's Blog</h1>
+        <Link href="/">
+          <h1>Johan's Blog</h1>
+        </Link>
         <p>Welcome</p>
       </div>
     </header>
