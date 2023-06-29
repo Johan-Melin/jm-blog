@@ -10,6 +10,8 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
+const generateStaticParams = async () => {};
+
 const postPage = (props: any) => {
   const { slug } = props.params;
   const post = getPostContent(slug);
