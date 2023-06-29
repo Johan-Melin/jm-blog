@@ -18,7 +18,7 @@ export default function RootLayout({
     <header>
       <div>
         <Link href="/">
-          <h1>Johan's Blog</h1>
+          <h1 className="text-3xl font-bold">Hello world!</h1>
         </Link>
         <p>Welcome</p>
       </div>
