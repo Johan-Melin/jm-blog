@@ -20,7 +20,9 @@ export default function RootLayout({
             Productivity in Code
           </h1>
         </Link>
-        <p className="text-slate-300">Fullstack, App and Game development</p>
+        <p className="text-slate-300">
+          &lt;&gt; Fullstack, App and Game development &lt;/&gt;
+        </p>
       </div>
     </header>
   );
@@ -36,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-col max-w-2xl min-h-screen px-6 mx-auto">
+        <div className="flex flex-col max-w-3xl min-h-screen px-6 mx-auto">
           {header}
           <div className="flex-grow">{children}</div>
           {footer}
