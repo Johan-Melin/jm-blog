@@ -3,7 +3,10 @@ import "./globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Productivity in Code",
+  title: {
+    default: "Productivity in Code",
+    template: `%s | Productivity in Code`,
+  },
   description:
     "Insights, Tips, and Tricks for Frontend, Backend, App and Game developers using React, TypeScript, Node, React Native, Unity, C# and AI.",
 };

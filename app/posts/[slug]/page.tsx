@@ -13,10 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) {
     return {
       title: "Not found",
+      description: "The page was not found",
     };
   }
   return {
     title: post.data.title,
+    description: post.data.subtitle,
   };
 }
 
