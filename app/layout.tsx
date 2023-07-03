@@ -1,7 +1,8 @@
 import Link from "next/link";
 import "./globals.css";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Productivity in Code",
   description:
     "Insights, Tips, and Tricks for Frontend, Backend, App and Game developers using React, TypeScript, Node, React Native, Unity, C# and AI.",

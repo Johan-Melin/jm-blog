@@ -2,14 +2,19 @@ import getPostMetadata from "@/components/getPostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import { Metadata } from "next";
 
 type Props = {
   params: { slug: string };
 };
 
-export async function generateMetadata({ params }: Props) {
-  const { slug } = params;
-  const post = getPostContent(slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = getPostContent(params.slug);
+  if (!post) {
+    return {
+      title: "Not found",
+    };
+  }
   return {
     title: post.data.title,
   };
