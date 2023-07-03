@@ -3,6 +3,18 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = params;
+  const post = getPostContent(slug);
+  return {
+    title: post.data.title,
+  };
+}
+
 const getPostContent = (slug: string) => {
   const folder = "posts/";
   const file = `${folder}${slug}.md`;
