@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const logo = {
   //boxShadow: "1px 2px 9px #F4AAB9",
-  width: 50,
-  height: 50,
+  width: 44,
+  height: 44,
   background: "rgba(0,155,255,.05)",
   transform: "rotate(45deg)",
   boxShadow: "0 0 0 1px white, 0 0 4px 1px teal, inset 0 0 4px 1px teal",
@@ -27,18 +27,21 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="p-8 my-6 text-center rounded-md bg-slate-800">
-        <div style={logo} className="absolute" />
-        <div className="flex flex-col">
+      <div className="flex flex-row items-center justify-between p-6 my-6 text-center rounded-md bg-slate-800">
+        <div className="flex w-16">
+          <div style={logo} />
+        </div>
+        <div className="flex flex-col grow">
           <Link href="/">
-            <h1 className="text-3xl font-bold text-white">
+            <h1 className="text-2xl font-bold text-white">
               Productivity in Code
             </h1>
           </Link>
           <p className="text-slate-300">
-            &lt;&gt; Fullstack, App and Game development &lt;/&gt;
+            &lt;&gt; Fullstack, App and Game dev &lt;/&gt;
           </p>
         </div>
+        <div className="flex w-16" />
       </div>
     </header>
   );
