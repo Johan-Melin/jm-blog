@@ -11,6 +11,15 @@ export const metadata: Metadata = {
     "Insights, Tips, and Tricks for Frontend, Backend, App and Game developers using React, TypeScript, Node, React Native, Unity, C# and AI.",
 };
 
+const logo = {
+  //boxShadow: "1px 2px 9px #F4AAB9",
+  width: 50,
+  height: 50,
+  background: "rgba(0,155,255,.05)",
+  transform: "rotate(45deg)",
+  boxShadow: "0 0 0 1px white, 0 0 4px 1px teal, inset 0 0 4px 1px teal",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -19,14 +28,17 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="p-8 my-6 text-center rounded-md bg-slate-800">
-        <Link href="/">
-          <h1 className="text-3xl font-bold text-white">
-            Productivity in Code
-          </h1>
-        </Link>
-        <p className="text-slate-300">
-          &lt;&gt; Fullstack, App and Game development &lt;/&gt;
-        </p>
+        <div style={logo} className="absolute" />
+        <div className="flex flex-col">
+          <Link href="/">
+            <h1 className="text-3xl font-bold text-white">
+              Productivity in Code
+            </h1>
+          </Link>
+          <p className="text-slate-300">
+            &lt;&gt; Fullstack, App and Game development &lt;/&gt;
+          </p>
+        </div>
       </div>
     </header>
   );
