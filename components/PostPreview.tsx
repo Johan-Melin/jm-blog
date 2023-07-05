@@ -5,11 +5,9 @@ const calculateDaysDiff = (dateString: string): number => {
   const date: Date = new Date(dateString);
   const currentDate: Date = new Date();
 
-  const daysDiff: number = Math.ceil(
+  return Math.ceil(
     Math.abs(currentDate.getTime() - date.getTime()) / (1000 * 3600 * 24)
   );
-
-  return daysDiff;
 };
 
 const PostPreview = (props: PostMetadata) => {
