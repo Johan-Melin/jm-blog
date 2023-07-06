@@ -26,6 +26,9 @@ const PostPreview = (props: PostMetadata) => {
           {props.title}
         </h2>
         <p className="text-slate-700">{props.subtitle}</p>
+        {props.tags.map((tag) => (
+          <span className="p-1 rounded-md hover:bg-slate-300">#{tag} </span>
+        ))}
       </div>
     </Link>
   );
