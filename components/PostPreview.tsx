@@ -14,7 +14,7 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <Link href={`/posts/${props.slug}`}>
       <div className="p-4 bg-white border rounded-md shadow-md">
-        <p className="text-xs text-slate-400">
+        <p className="text-xs text-gray">
           {new Date(Date.parse(props.date)).toLocaleDateString("en-US", {
             //weekday: "long",
             year: "numeric",
@@ -25,9 +25,9 @@ const PostPreview = (props: PostMetadata) => {
         <h2 className="text-2xl font-bold hover:text-violet-800">
           {props.title}
         </h2>
-        <p className="text-slate-700">{props.subtitle}</p>
+        <p className="text-dark">{props.subtitle}</p>
         {props.tags.map((tag) => (
-          <span className="p-1 rounded-md hover:bg-slate-300">#{tag} </span>
+          <span className="p-1 rounded-md hover:bg-light">#{tag} </span>
         ))}
       </div>
     </Link>
