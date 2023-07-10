@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PostMetadata } from "./PostMetadata";
+import Image from "next/image";
 
 /*const calculateDaysDiff = (dateString: string): number => {
   const date: Date = new Date(dateString);
@@ -13,6 +14,7 @@ import { PostMetadata } from "./PostMetadata";
 const PostPreview = (props: PostMetadata) => {
   return (
     <Link href={`/posts/${props.slug}`}>
+      <Image src={`/images/${props.image}`} alt="" width="640" height="426" />
       <div className="p-4 bg-white border rounded-md shadow-md border-light">
         <div className="flex flex-row justify-between">
           <p className="text-xs text-gray">

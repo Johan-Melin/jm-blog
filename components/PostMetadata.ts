@@ -5,4 +5,5 @@ export interface PostMetadata {
   tags: Array<string>;
   slug: string;
   time: number;
+  image: string;
 }
