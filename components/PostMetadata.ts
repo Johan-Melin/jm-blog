@@ -4,4 +4,5 @@ export interface PostMetadata {
   subtitle: string;
   tags: Array<string>;
   slug: string;
+  time: number;
 }

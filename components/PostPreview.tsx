@@ -14,14 +14,17 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <Link href={`/posts/${props.slug}`}>
       <div className="p-4 bg-white border rounded-md shadow-md border-light">
-        <p className="text-xs text-gray">
-          {new Date(Date.parse(props.date)).toLocaleDateString("en-US", {
-            //weekday: "long",
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          })}
-        </p>
+        <div className="flex flex-row justify-between">
+          <p className="text-xs text-gray">
+            {new Date(Date.parse(props.date)).toLocaleDateString("en-US", {
+              //weekday: "long",
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
+          <p className="text-xs text-gray">{props.time} min read</p>
+        </div>
         <h2 className="text-2xl font-bold hover:text-link">{props.title}</h2>
         <p className="text-dark">{props.subtitle}</p>
         {props.tags.map((tag) => (
