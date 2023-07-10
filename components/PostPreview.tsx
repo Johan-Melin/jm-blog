@@ -13,7 +13,7 @@ import { PostMetadata } from "./PostMetadata";
 const PostPreview = (props: PostMetadata) => {
   return (
     <Link href={`/posts/${props.slug}`}>
-      <div className="p-4 bg-white border rounded-md shadow-md">
+      <div className="p-4 bg-white border rounded-md shadow-md border-light">
         <p className="text-xs text-gray">
           {new Date(Date.parse(props.date)).toLocaleDateString("en-US", {
             //weekday: "long",
@@ -22,9 +22,7 @@ const PostPreview = (props: PostMetadata) => {
             day: "numeric",
           })}
         </p>
-        <h2 className="text-2xl font-bold hover:text-violet-800">
-          {props.title}
-        </h2>
+        <h2 className="text-2xl font-bold hover:text-link">{props.title}</h2>
         <p className="text-dark">{props.subtitle}</p>
         {props.tags.map((tag) => (
           <span className="p-1 rounded-md hover:bg-light">#{tag} </span>
