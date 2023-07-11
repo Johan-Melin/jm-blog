@@ -13,8 +13,14 @@ import Image from "next/image";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <Link href={`/posts/${props.slug}`}>
-      <Image src={`/images/${props.image}`} alt="" width="640" height="426" />
+    <div>
+      <Image
+        src={`/images/${props.image}`}
+        alt=""
+        width="640"
+        height="426"
+        className="w-full"
+      />
       <div className="p-4 bg-white border rounded-md shadow-md border-light">
         <div className="flex flex-row justify-between">
           <p className="text-xs text-gray">
@@ -27,13 +33,15 @@ const PostPreview = (props: PostMetadata) => {
           </p>
           <p className="text-xs text-gray">{props.time} min read</p>
         </div>
-        <h2 className="text-2xl font-bold hover:text-link">{props.title}</h2>
+        <Link href={`/posts/${props.slug}`}>
+          <h2 className="text-2xl font-bold hover:text-link">{props.title}</h2>
+        </Link>
         <p className="text-dark">{props.subtitle}</p>
         {props.tags.map((tag) => (
           <span className="p-1 rounded-md hover:bg-light">#{tag} </span>
         ))}
       </div>
-    </Link>
+    </div>
   );
 };
 
