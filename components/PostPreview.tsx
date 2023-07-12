@@ -12,6 +12,8 @@ import Image from "next/image";
 };*/
 
 const PostPreview = (props: PostMetadata) => {
+  const postDate = new Date(props.date);
+
   return (
     <Link href={`/posts/${props.slug}`}>
       <div className="relative overflow-hidden group">
@@ -29,7 +31,7 @@ const PostPreview = (props: PostMetadata) => {
       <div className="p-4 bg-white border rounded-md shadow-md border-light">
         <div className="flex flex-row justify-between">
           <p className="text-xs text-gray">
-            {new Date(Date.parse(props.date)).toLocaleDateString("en-US", {
+            {postDate.toLocaleDateString("en-US", {
               //weekday: "long",
               year: "numeric",
               month: "short",
