@@ -17,13 +17,16 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <Link href={`/posts/${props.slug}`}>
       <div className="relative overflow-hidden group">
-        <Image
-          src={`/images/${props.image}`}
-          alt=""
-          width="640"
-          height="426"
-          className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105"
-        />
+        <div className="blur-load">
+          <Image
+            src={`/images/${props.image}`}
+            alt=""
+            width="640"
+            height="426"
+            loading="lazy"
+            className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105"
+          />
+        </div>
         <p className="absolute inset-0 p-2 duration-200 ease-in-out translate-x-full bg-white opacity-0 text-dark bg-opacity-40 group-hover:opacity-100 group-hover:translate-x-0">
           {props.subtitle}
         </p>
