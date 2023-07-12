@@ -11,7 +11,6 @@ module.exports = {
       light: '#cbd5e1',
       gray: '#6c7684',
       dark: '#1e293b',
-      link: '#7c3aed',
     },
     extend: {
       backgroundImage: {

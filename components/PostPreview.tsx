@@ -15,8 +15,8 @@ const PostPreview = (props: PostMetadata) => {
   const postDate = new Date(props.date);
 
   return (
-    <Link href={`/posts/${props.slug}`}>
-      <div className="relative overflow-hidden group">
+    <Link href={`/posts/${props.slug}`} className="group">
+      <div className="relative overflow-hidden">
         <Image
           src={`/images/${props.image}`}
           alt=""
@@ -41,7 +41,9 @@ const PostPreview = (props: PostMetadata) => {
           </p>
           <p className="text-xs text-gray">{props.time} min read</p>
         </div>
-        <h2 className="text-2xl font-bold hover:text-link">{props.title}</h2>
+        <h2 className="text-2xl font-bold group-hover:underline">
+          {props.title}
+        </h2>
         {props.tags.map((tag) => (
           <span className="p-1 rounded-md hover:bg-light">#{tag} </span>
         ))}
