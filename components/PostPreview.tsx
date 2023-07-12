@@ -23,7 +23,7 @@ const PostPreview = (props: PostMetadata) => {
           width="640"
           height="426"
           loading="lazy"
-          className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105"
+          className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
         />
         <p className="absolute inset-0 p-2 duration-200 ease-in-out translate-x-full bg-white opacity-0 text-dark bg-opacity-40 group-hover:opacity-100 group-hover:translate-x-0">
           {props.subtitle}
