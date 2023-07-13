@@ -6,4 +6,5 @@ export interface PostMetadata {
   slug: string;
   time: number;
   image: string;
+  imageBlurData: string;
 }
