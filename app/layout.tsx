@@ -11,15 +11,6 @@ export const metadata: Metadata = {
     "Insights, Tips, and Tricks for Frontend, Backend, App and Game developers using React, TypeScript, Node, React Native, Unity, C# and AI.",
 };
 
-const logo = {
-  //boxShadow: "1px 2px 9px #F4AAB9",
-  width: 44,
-  height: 44,
-  background: "rgba(0,155,255,.05)",
-  transform: "rotate(45deg)",
-  boxShadow: "0 0 0 1px white, 0 0 4px 1px teal, inset 0 0 4px 1px teal",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -29,8 +20,8 @@ export default function RootLayout({
     <header>
       <div className="px-6 py-4 mb-6 bg-black">
         <Link href="/">
-          <h1 className="text-2xl font-bold text-white">
-            Productivity in Code
+          <h1 className="inline p-1 text-2xl font-bold bg-white rounded-md">
+            PIC
           </h1>
         </Link>
       </div>
