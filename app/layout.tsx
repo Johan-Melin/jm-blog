@@ -27,21 +27,10 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="flex flex-row items-center justify-between p-6 my-6 text-center rounded-md bg-dark">
-        <div className="flex w-16">
-          <div style={logo} />
-        </div>
-        <div className="flex flex-col grow">
-          <Link href="/">
-            <h1 className="text-2xl font-bold text-white">
-              Productivity in Code
-            </h1>
-          </Link>
-          <p className="text-light">
-            &lt;&gt; Fullstack, App and Game dev &lt;/&gt;
-          </p>
-        </div>
-        <div className="flex w-16" />
+      <div className="px-6 py-4 mb-6 shadow ipx-6">
+        <Link href="/">
+          <h1 className="text-2xl font-bold">Productivity in Code</h1>
+        </Link>
       </div>
     </header>
   );
@@ -57,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-col min-h-screen px-6 mx-auto">
+        <div className="flex flex-col min-h-screen mx-auto">
           {header}
-          <div className="flex-grow">{children}</div>
+          <div className="flex-grow px-6">{children}</div>
           {footer}
         </div>
       </body>
