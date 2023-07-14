@@ -27,9 +27,11 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="px-6 py-4 mb-6 shadow ipx-6">
+      <div className="px-6 py-4 mb-6 bg-black">
         <Link href="/">
-          <h1 className="text-2xl font-bold">Productivity in Code</h1>
+          <h1 className="text-2xl font-bold text-white">
+            Productivity in Code
+          </h1>
         </Link>
       </div>
     </header>
