@@ -8,7 +8,11 @@ export const metadata: Metadata = {
     template: `%s | Productivity in Code`,
   },
   description:
-    "Insights, Tips, and Tricks for Frontend, Backend, App and Game developers using React, TypeScript, Node, React Native, Unity, C# and AI.",
+    "Insights, Tips, and Tricks for Game development with Unity and C#.",
+  icons: {
+    icon: "./icon.ico",
+    shortcut: "./icon.ico",
+  },
 };
 
 export default function RootLayout({
