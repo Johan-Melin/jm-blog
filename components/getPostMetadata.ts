@@ -21,6 +21,7 @@ const getPostMetadata = (): PostMetadata[] => {
       image: matterResult.data.image,
       alt: matterResult.data.alt,
       imageBlurData: matterResult.data.imageBlurData,
+      animImage: matterResult.data.animImage,
     };
   });
 

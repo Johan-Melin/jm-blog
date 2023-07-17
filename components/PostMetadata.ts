@@ -8,4 +8,5 @@ export interface PostMetadata {
   time: number;
   image: string;
   imageBlurData: string;
+  animImage: string;
 }
