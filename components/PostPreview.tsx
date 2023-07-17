@@ -20,6 +20,7 @@ const PostPreview = (props: PostMetadata) => {
         <Image
           src={`/images/${props.image}`}
           alt=""
+          sizes="(min-width: 512px) 512px"
           loading="lazy"
           className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
           placeholder="blur"
