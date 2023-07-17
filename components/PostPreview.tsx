@@ -19,7 +19,7 @@ const PostPreview = (props: PostMetadata) => {
       <div className="relative h-64 overflow-hidden">
         <Image
           src={`/images/${props.image}`}
-          alt=""
+          alt={props.alt}
           sizes="(min-width: 512px) 512px"
           loading="lazy"
           className="block w-full duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
