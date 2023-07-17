@@ -2,8 +2,8 @@
 title: "Creating a vampire survivors game in Unity #2"
 subtitle: "Setting up player shooting, object pooling and monster respawning"
 date: "2023-06-29"
-tags: ["Unity"]
-time: 5
+tags: ["Unity", "Tutorial"]
+time: "Est. time: 5 min"
 image: "post2.jpg"
 animImage: ""
 alt: "Illustration showing a player cube blasting a lazer through by enemy cubes."

@@ -2,8 +2,8 @@
 title: "Creating a vampire survivors game in Unity #1"
 subtitle: "Setting up the project, creating player controls, monster spawning and follow behaviour"
 date: "2023-06-27"
-tags: ["Unity"]
-time: 5
+tags: ["Unity", "Tutorial"]
+time: "Est. time: 10 min"
 image: "post1.jpg"
 animImage: "post1.webp"
 alt: "Illustration showing a player cube surrounded by enemy cubes."

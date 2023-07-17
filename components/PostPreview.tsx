@@ -51,7 +51,7 @@ const PostPreview = (props: PostMetadata) => {
               day: "numeric",
             })}
           </p>
-          <p className="text-xs text-gray">{props.time} min read</p>
+          <p className="text-xs text-gray">{props.time}</p>
         </div>
         <h2 className="text-2xl font-bold group-hover:underline">
           {props.title}
