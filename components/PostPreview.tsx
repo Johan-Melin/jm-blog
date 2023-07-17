@@ -16,7 +16,7 @@ const PostPreview = (props: PostMetadata) => {
 
   return (
     <Link href={`/posts/${props.slug}`} className="group">
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-64 overflow-hidden">
         <Image
           src={`/images/${props.image}`}
           alt=""
