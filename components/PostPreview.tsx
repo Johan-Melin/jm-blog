@@ -57,7 +57,7 @@ const PostPreview = (props: PostMetadata) => {
           {props.title}
         </h2>
         {props.tags.map((tag) => (
-          <span className="p-1 rounded-md hover:bg-light">#{tag} </span>
+          <span className="px-1 pb-0.5 rounded-md hover:bg-light">#{tag} </span>
         ))}
       </div>
     </Link>

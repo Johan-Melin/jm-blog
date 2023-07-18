@@ -1,5 +1,5 @@
 ---
-title: "Creating a vampire survivors game in Unity #1"
+title: "Creating a vampire survivors game in Unity #1 - Movement"
 subtitle: "Setting up the project, creating player controls, monster spawning and follow behaviour"
 date: "2023-06-27"
 tags: ["Unity", "Tutorial"]
