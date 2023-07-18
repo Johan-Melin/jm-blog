@@ -15,6 +15,11 @@ imageBlurData: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHB
 In this tutorial we will be using 3D and rigidbodies for collisions.
 In this first we'll create 4 scripts.
 
+<details>
+  <summary>See animation of player and enemy movement</summary>
+![alt text](/images/post1.webp "Enemies following the player")
+</details>
+
 ## Setting up the project
 
 Start a new project in Unity with the 3D (URP) template.
