@@ -16,16 +16,16 @@ const PostPreview = (props: PostMetadata) => {
 
   return (
     <Link href={`/posts/${props.slug}`} className="group">
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative overflow-hidden">
         <Image
           src={`/images/${props.image}`}
           alt={props.alt}
-          sizes="(min-width: 512px) 512px"
+          width={512}
+          height={512}
           loading="lazy"
           className="duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
           placeholder="blur"
           blurDataURL={props.imageBlurData}
-          fill
         />
         {props.animImage !== "" && (
           <Image
