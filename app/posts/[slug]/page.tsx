@@ -44,7 +44,7 @@ const postPage = (props: any) => {
   return (
     <div>
       <h1 className="text-3xl font-bold">{post.data.title}</h1>
-      <article className="prose prose-slate">
+      <article className="max-w-5xl prose prose-slate">
         <Markdown>{post.content}</Markdown>
       </article>
     </div>

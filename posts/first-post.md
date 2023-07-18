@@ -1,5 +1,5 @@
 ---
-title: "Creating a vampire survivors game in Unity #1 - Movement"
+title: "Creating a Vampire Survivors game in Unity #1 - Movement"
 subtitle: "Setting up the project, creating player controls, monster spawning and follow behaviour"
 date: "2023-06-27"
 tags: ["Unity", "Tutorial"]
@@ -13,17 +13,77 @@ imageBlurData: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHB
 ## OVERVIEW
 
 In this tutorial we will be using 3D and rigidbodies for collisions.
+In this first we'll create 4 scripts.
 
 ## Setting up the project
 
 Start a new project in Unity with the 3D (URP) template.
-For a start we'll only be using simple cubes to represent the player and enemies.
 Start by rotating the camera downwards by setting it's X rotation to 90 and it's Y position to 30.
+Create a plane and set the X and Z scale to 10.
 
-> We
-> Like
+## Player
 
+### Movement
+
+<details>
+  <summary>Show code</summary>
+
+```C#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField]private float moveSpeed = 5f;
+
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+
+        if (moveDirection.magnitude > 0)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = targetRotation;
+        }
+
+        Vector3 movement = moveDirection * moveSpeed * Time.deltaTime;
+        transform.position += movement;
+    }
+}
+```
+
+</details>
+
+## Camera follow
+
+<details>
+  <summary>Show code</summary>
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+</details>
+
+## Enemy movement
+
+<details>
+  <summary>Show code</summary>
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+</details>
+
+## Enemy spawning
+
+<details>
+  <summary>Show code</summary>
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+</details>
