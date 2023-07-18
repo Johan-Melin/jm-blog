@@ -31,10 +31,10 @@ const PostPreview = (props: PostMetadata) => {
           <Image
             src={`/images/${props.animImage}`}
             alt={props.alt}
-            sizes="(min-width: 512px) 512px"
+            width={512}
+            height={512}
             loading="lazy"
-            className="opacity-0 group-hover:opacity-100"
-            fill
+            className="absolute inset-0 opacity-0 group-hover:opacity-100"
           />
         )}
         <p className="absolute inset-0 flex items-center p-2 text-center text-white duration-200 ease-in-out translate-y-full opacity-0 bg-dark bg-opacity-40 group-hover:opacity-100 group-hover:translate-y-0">
