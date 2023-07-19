@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: {
@@ -34,8 +35,19 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <div className="py-6 text-center border-t border-gray text-gray">
-        <p>Developed by Johan</p>
+      <div className="flex flex-row justify-between px-4 py-6 text-center border-t border-gray text-gray">
+        <div />
+        <p>{new Date().getFullYear()} &copy; Johan Melin</p>
+        <a href="https://github.com/Johan-Melin">
+          <Image
+            src="/github.svg"
+            alt="Github Logo"
+            width={28}
+            height={28}
+            title="Visit my Github page"
+            className="p-1 duration-200 rounded-md hover:bg-light"
+          />
+        </a>
       </div>
     </footer>
   );
