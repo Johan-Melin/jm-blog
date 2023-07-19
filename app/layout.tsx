@@ -45,7 +45,7 @@ export default function RootLayout({
             width={28}
             height={28}
             title="Visit my Github page"
-            className="p-1 duration-200 rounded-md hover:bg-light"
+            className="p-1 transition-all duration-300 rounded-md hover:bg-light hover:-translate-y-1"
           />
         </a>
       </div>
