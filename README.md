@@ -9,6 +9,7 @@ It was created with [Next.js](https://nextjs.org/), bootstrapped with [`create-n
 
 1. Aim for a perfect Lighthouse score
 2. SSG posts for better SEO
+3. Responsive design for mobile
 
 ## Getting Started
 
