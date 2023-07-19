@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PRODUCTIVITY IN CODE
+
+## About
+
+This is a repository for my Unity blog at [johanmelin.com](https://www.johanmelin.com).  
+It was created with [Next.js](https://nextjs.org/), bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Features
+
+1. Aim for a perfect Lighthouse score
+2. SSG posts for better SEO
 
 ## Getting Started
 
