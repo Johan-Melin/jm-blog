@@ -13,8 +13,9 @@ const getPostMetadata = (): PostMetadata[] => {
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
-      date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
+      date: matterResult.data.date,
+      published: matterResult.data.published,
       tags: matterResult.data.tags,
       slug: fileName.replace(".md", ""),
       time: matterResult.data.time,
@@ -25,7 +26,9 @@ const getPostMetadata = (): PostMetadata[] => {
     };
   });
 
-  return posts;
+  const publishedPosts = posts.filter((post) => post.published === true);
+
+  return publishedPosts;
 };
 
 export default getPostMetadata;

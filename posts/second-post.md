@@ -2,6 +2,7 @@
 title: "Creating a Vampire Survivors game in Unity #2 - Shooting"
 subtitle: "Setting up player shooting, object pooling and monster respawning"
 date: "2023-06-29"
+published: false
 tags: ["Unity", "Tutorial"]
 time: "Est. time: 5 min"
 image: "post2.jpg"
