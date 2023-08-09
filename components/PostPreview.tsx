@@ -11,56 +11,66 @@ import Image from "next/image";
   );
 };*/
 
+const imageSize = {
+  width: 512,
+  height: 512,
+};
+
 const PostPreview = (props: PostMetadata) => {
   const postDate = new Date(props.date);
 
   return (
-    <Link href={`/posts/${props.slug}`} className="group">
-      <div className="relative overflow-hidden">
-        <Image
-          src={`/images/${props.image}`}
-          alt={props.alt}
-          width={512}
-          height={512}
-          loading="lazy"
-          className="duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
-          placeholder="blur"
-          blurDataURL={props.imageBlurData}
-        />
-        {props.animImage !== "" && (
+    <div className="p-4 bg-white shadow-md ">
+      <Link href={`/posts/${props.slug}`} className="group">
+        <div className="relative overflow-hidden">
           <Image
-            src={`/images/${props.animImage}`}
+            src={`/images/${props.image}`}
             alt={props.alt}
-            width={512}
-            height={512}
+            {...imageSize}
             loading="lazy"
-            className="absolute inset-0 opacity-0 group-hover:opacity-100"
+            className="duration-200 ease-in-out group-hover:blur-sm group-hover:scale-105 bg-gray"
+            placeholder="blur"
+            blurDataURL={props.imageBlurData}
           />
-        )}
-        <p className="absolute inset-0 flex items-center p-2 text-center text-white duration-200 ease-in-out translate-y-full opacity-0 bg-dark bg-opacity-40 group-hover:opacity-100 group-hover:translate-y-0">
-          {props.subtitle}
-        </p>
-      </div>
-      <div className="p-4 bg-white border rounded-md shadow-md border-light">
-        <div className="flex flex-row justify-between">
-          <p className="text-xs text-gray">
-            {postDate.toLocaleDateString("en-US", {
-              //weekday: "long",
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            })}
-          </p>
-          <p className="text-xs text-gray">{props.time}</p>
+          {props.animImage !== "" && (
+            <Image
+              src={`/images/${props.animImage}`}
+              alt={props.alt}
+              {...imageSize}
+              loading="lazy"
+              className="absolute inset-0 opacity-0 group-hover:opacity-100"
+            />
+          )}
         </div>
-        <h2 className="text-2xl font-bold group-hover:underline">
-          {props.title}
-        </h2>
-        {props.tags.map((tag) => (
-          <span className="px-1 pb-0.5 rounded-md hover:bg-light">#{tag} </span>
-        ))}
-      </div>
-    </Link>
+        <div>
+          {props.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="text-sm text-gray px-1 pb-0.5 rounded-md hover:bg-light"
+            >
+              {tag}{" "}
+            </span>
+          ))}
+          <h2 className="font-bold text-l group-hover:underline">
+            {props.title}
+          </h2>
+          <div className="text-xs text-gray">
+            <p className="my-1">{props.subtitle}</p>
+            <div className="flex flex-row justify-between">
+              <p>
+                {postDate.toLocaleDateString("en-US", {
+                  //weekday: "long",
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </p>
+              <p>{props.time}</p>
+            </div>
+          </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 
