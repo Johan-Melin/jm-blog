@@ -19,6 +19,20 @@ const imageSize = {
 const PostPreview = (props: PostMetadata) => {
   const postDate = new Date(props.date);
 
+  const postInfo = (
+    <div className="flex flex-row justify-between">
+      <p>
+        {postDate.toLocaleDateString("en-US", {
+          //weekday: "long",
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}
+      </p>
+      <p>{props.time}</p>
+    </div>
+  );
+
   return (
     <div className="p-4 bg-white shadow-md ">
       <Link href={`/posts/${props.slug}`} className="group">
@@ -56,17 +70,7 @@ const PostPreview = (props: PostMetadata) => {
           </h2>
           <div className="text-xs text-gray">
             <p className="my-1">{props.subtitle}</p>
-            <div className="flex flex-row justify-between">
-              <p>
-                {postDate.toLocaleDateString("en-US", {
-                  //weekday: "long",
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })}
-              </p>
-              <p>{props.time}</p>
-            </div>
+            {postInfo}
           </div>
         </div>
       </Link>
