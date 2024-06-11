@@ -29,7 +29,6 @@ const PostPreview = (props: PostMetadata) => {
           day: "numeric",
         })}
       </p>
-      <p>{props.time}</p>
     </div>
   );
 

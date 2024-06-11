@@ -40,10 +40,12 @@ export const generateStaticParams = async () => {
 const postPage = (props: any) => {
   const { slug } = props.params;
   const post = getPostContent(slug);
+  const postDate = new Date(post.data.date);
 
   return (
     <div>
       <h1 className="text-3xl font-bold">{post.data.title}</h1>
+      <p>{postDate.toLocaleDateString()}</p>
       <article className="max-w-5xl prose prose-slate">
         <Markdown>{post.content}</Markdown>
       </article>
