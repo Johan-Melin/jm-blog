@@ -3,11 +3,11 @@ title: "LeetCode 1122. Relative Sort Array"
 subtitle: "Given two arrays, sort the elements of the first so that the relative ordering of items are the same as in the second array."
 published: true
 date: "2024-06-11"
-tags: ["Array", "Hash Table", "Sorting", "Counting Sort"]
+tags: [Array, Hash Table, Sorting, Counting Sort]
 time: "10"
-image: "post1.jpg"
+image: "1122.webp"
 animImage: "post1.webp"
-alt: "Illustration showing a player cube surrounded by enemy cubes."
+alt: "Illustration showing the number 1122 against a brick wall."
 imageBlurData: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACMQAAEDAwQCAwAAAAAAAAAAAAECAxEAEiEEBSIxBqEUUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGhEAAgIDAAAAAAAAAAAAAAAAAQIAEgMEEf/aAAwDAQACEQMRAD8AiM+OaZ3Zhqfmtpfi6xSgIM8RBzkzGPdZ86hLZKC4QU4i7r1RVLUdtacKjfD3Kc4BjP5SikJuPEd/VMdQYfTyOlrHs//Z"
 ---
 
