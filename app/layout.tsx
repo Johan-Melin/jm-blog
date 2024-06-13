@@ -46,7 +46,7 @@ export default function RootLayout({
               quality={75}
               priority={false} 
               sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1280px"
-              className="z-10 fixed"
+              className="z-10 fixed hidden lg:block"
             />
             <div className="absolute inset-0 z-20" style={{background: 'radial-gradient(circle, transparent, rgba(0, 0, 0, 0.75))'}}></div>
           </div>
