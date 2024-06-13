@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="px-6 py-4 bg-black">
+      <div className="px-6 py-4">
         <Link href="/">
           <h1 className="inline p-1 text-2xl font-bold bg-white rounded-md">
             PIC
@@ -33,34 +33,27 @@ export default function RootLayout({
     </header>
   );
 
-  const footer = (
-    <footer>
-      <div className="flex flex-row justify-between px-4 py-6 text-center border-t border-gray text-gray">
-        <div />
-        <p>{new Date().getFullYear()} &copy; Johan Melin</p>
-        <a href="https://github.com/Johan-Melin">
-          <Image
-            src="/github.svg"
-            alt="Github Logo"
-            width={28}
-            height={28}
-            title="Visit my Github page"
-            className="p-1 transition-all duration-300 rounded-md hover:bg-light hover:-translate-y-1"
-          />
-        </a>
-      </div>
-    </footer>
-  );
-
   return (
     <html lang="en">
       <body>
         <div className="flex flex-col min-h-screen">
-          {header}
-          <div className="flex-grow max-w-5xl p-6 mx-auto bg-light">
+        <Image
+          src="/background.jpg"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          quality={75}
+          priority={false} 
+          sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1280px"
+          className="z-10"
+        />
+        <div className="absolute inset-0 z-20" style={{background: 'radial-gradient(circle, transparent, rgba(0, 0, 0, 0.75))'}}></div>
+          <header className="z-30">
+            {header}
+          </header>
+          <div className="flex-grow max-w-5xl p-6 mx-auto z-30">
             {children}
           </div>
-          {footer}
         </div>
       </body>
     </html>
