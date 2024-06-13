@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex flex-col min-h-screen">
-          <div style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 10 }}>
+          <div className="fixed w-full h-full z-10 bg-dark">
             <Image
               src="/background.jpg"
               alt="Background Image"
@@ -46,9 +46,9 @@ export default function RootLayout({
               quality={75}
               priority={false} 
               sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1280px"
-              className="z-10 fixed hidden lg:block"
+              className="z-10 fixed hidden md:block"
             />
-            <div className="absolute inset-0 z-20" style={{background: 'radial-gradient(circle, transparent, rgba(0, 0, 0, 0.75))'}}></div>
+            <div className="absolute inset-0 z-20 hidden md:block" style={{background: 'radial-gradient(circle, transparent, rgba(0, 0, 0, 0.75))'}}></div>
           </div>
           <header className="z-30">
             {header}
