@@ -36,8 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-col min-h-screen">
-          <div className="fixed w-full h-full z-10 bg-dark">
+        <div className="flex flex-col min-h-screen bg-dark">
+          <div className="fixed w-full h-full z-10">
             <Image
               src="/background.jpg"
               alt="Background Image"
