@@ -59,15 +59,15 @@ const PostPreview = (props: PostMetadata) => {
           {props.tags.map((tag, index) => (
             <span
               key={index}
-              className="text-sm text-gray px-1 pb-0.5 rounded-md hover:bg-light"
+              className="text-sm text-light px-1 pb-0.5 rounded-md hover:bg-gray"
             >
               {tag}{" "}
             </span>
           ))}
-          <h2 className="font-bold text-l group-hover:underline">
+          <h2 className="font-bold text-l group-hover:underline text-white">
             {props.title}
           </h2>
-          <div className="text-xs text-gray">
+          <div className="text-xs text-light">
             <p className="my-1">{props.subtitle}</p>
             {postInfo}
           </div>

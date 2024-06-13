@@ -44,9 +44,9 @@ const postPage = (props: any) => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">{post.data.title}</h1>
-      <p>{postDate.toLocaleDateString()}</p>
-      <article className="max-w-5xl prose prose-slate">
+      <h1 className="text-3xl font-bold text-white">{post.data.title}</h1>
+      <p className="text-white">{postDate.toLocaleDateString()}</p>
+      <article className="max-w-5xl prose prose-sky dark:prose-invert">
         <Markdown>{post.content}</Markdown>
       </article>
     </div>
