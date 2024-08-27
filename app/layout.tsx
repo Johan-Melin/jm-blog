@@ -3,7 +3,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = {
+/*export const metadata: Metadata = {
   title: {
     default: "Productivity in Code",
     template: `%s | Productivity in Code`,
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     icon: "./icon.ico",
     shortcut: "./icon.ico",
   },
-};
+};*/
 
 export default function RootLayout({
   children,
@@ -53,8 +53,17 @@ export default function RootLayout({
           <header className="z-30">
             {header}
           </header>
-          <div className="flex-grow max-w-5xl p-6 mx-auto z-30">
-            {children}
+          <div className="flex flex-row">
+            <nav className="w-64 bg-gray-800 text-white p-6 z-30">
+              <ul>
+                <li><Link href="/">Blog</Link></li>
+                <li><Link href="/chess/vision/">Chess Vision</Link></li>
+                {/* Add more menu items here */}
+              </ul>
+            </nav>
+            <div className="flex-grow max-w-5xl p-6 mx-auto z-30">
+              {children}
+            </div>
           </div>
         </div>
       </body>
