@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 
 function index() {
@@ -13,7 +15,7 @@ function index() {
     }}>
   {rows.map((_, rowIndex) =>
     cols.map((_, colIndex) =>
-      <div key={`${rowIndex}-${colIndex}`} style={{
+      <div className='cell' key={`${rowIndex}-${colIndex}`} style={{
         backgroundColor: rowIndex === 8 || colIndex === 0 
         ? 'transparent'
         : (rowIndex + colIndex) % 2 === 0 ? 'white' : 'black',

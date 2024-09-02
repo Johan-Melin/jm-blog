@@ -2,6 +2,8 @@ import Link from "next/link";
 import "./globals.css";
 import { Metadata } from "next";
 import Image from "next/image";
+import { SiChessdotcom } from "react-icons/si";
+import { FaPencilAlt } from 'react-icons/fa';
 
 /*export const metadata: Metadata = {
   title: {
@@ -56,8 +58,18 @@ export default function RootLayout({
           <div className="flex flex-row">
             <nav className="w-64 bg-gray-800 text-white p-6 z-30">
               <ul>
-                <li><Link href="/">Blog</Link></li>
-                <li><Link href="/chess/vision/">Chess Vision</Link></li>
+                <li className="sidebar-item">
+                  <Link className="sidebar-link" href="/">
+                    <div style={{backgroundColor: "cyan"}}><FaPencilAlt /></div>
+                    Blog
+                  </Link>
+                </li>
+                <li className="sidebar-item">
+                  <Link className="sidebar-link" href="/chess/vision/">
+                  <div style={{backgroundColor: "green"}}><SiChessdotcom /></div>
+                    Chess Vision
+                  </Link>
+                </li>
                 {/* Add more menu items here */}
               </ul>
             </nav>
