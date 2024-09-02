@@ -5,18 +5,18 @@ import Image from "next/image";
 import { SiChessdotcom } from "react-icons/si";
 import { FaPencilAlt } from 'react-icons/fa';
 
-/*export const metadata: Metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Productivity in Code",
     template: `%s | Productivity in Code`,
   },
   description:
-    "Insights, Tips, and Tricks for Game development with Unity and C#.",
+    "A comprehensive platform that combines all the apps you need for your personal and work needs in one place.",
   icons: {
     icon: "./icon.ico",
     shortcut: "./icon.ico",
   },
-};*/
+};
 
 export default function RootLayout({
   children,
