@@ -2,7 +2,7 @@
 
 ## About
 
-This is a repository for my Unity blog at [johanmelin.com](https://www.johanmelin.com).  
+This is a repository for my website [johanmelin.com](https://www.johanmelin.com).  
 It was created with [Next.js](https://nextjs.org/), bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Features
