@@ -27,15 +27,15 @@ const PostPreview = (props: PostMetadata) => {
           year: "numeric",
           month: "short",
           day: "numeric",
-        })}
+        })} -  {props.author}
       </p>
     </div>
   );
 
   return (
-    <div className="p-4">
-      <Link href={`/posts/${props.slug}`} className="flex flex-row ">
-        <div className="relative overflow-hidden">
+    <div className="flex space-x-2 flex-col sm:flex-row">
+      <div className="relative overflow-hidden">
+        <Link href={`/posts/${props.slug}`}>
           <Image
             src={`/images/${props.image}`}
             alt={props.alt}
@@ -43,25 +43,29 @@ const PostPreview = (props: PostMetadata) => {
             loading="lazy"
             className=""
           />
+          </Link>
         </div>
         <div>
-          {props.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="text-sm text-dark px-1 pb-0.5 rounded-md hover:bg-gray"
-            >
-              {tag}{" "}
-            </span>
-          ))}
-          <h2 className="font-bold text-l group-hover:underline text-dark">
-            {props.title}
-          </h2>
-          <div className="text-xs text-dark">
+          <div className="flex space-x-2">
+            {props.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="text-sm"
+              >
+                {tag}{" "}
+              </span>
+            ))}
+          </div>
+          <Link href={`/posts/${props.slug}`}>
+            <h2 className="font-bold text-xl group-hover:underline">
+              {props.title}
+            </h2>
+          </Link>
+          <div className="text-s">
+            <p>{postInfo}</p>
             <p className="my-1">{props.subtitle}</p>
-            {postInfo}
           </div>
         </div>
-      </Link>
     </div>
   );
 };

@@ -2,6 +2,7 @@ export interface PostMetadata {
   title: string;
   subtitle: string;
   date: string;
+  author: string;
   published: boolean;
   tags: Array<string>;
   slug: string;

@@ -1,13 +1,14 @@
 ---
 title: "Top retail companies’ SEO and Performance insights"
 subtitle: "Given two arrays, sort the elements of the first so that the relative ordering of items are the same as in the second array."
+author: "Johan Melin"
 published: true
 date: "2025-02-18"
 tags: [SEO, Performance]
 time: "10"
 image: "laptop_lighthouse.webp"
 animImage: "post1.webp"
-alt: "Digital illustration of a laptop displaying a Google Lighthouse audit report with performance metrics such as speed scores, SEO ratings, and accessibility scores. Around the laptop, floating icons and logos of major retail companies represent different websites being analyzed."
+alt: "Digital illustration of a laptop displaying a Google Lighthouse audit report with performance metrics. Around the laptop, floating icons and logos of major retail companies represent different websites being analyzed."
 ---
 
 ## OVERVIEW

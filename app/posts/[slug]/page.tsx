@@ -41,11 +41,12 @@ const postPage = (props: any) => {
   const { slug } = props.params;
   const post = getPostContent(slug);
   const postDate = new Date(post.data.date);
+  const author = post.data.author;
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-dark">{post.data.title}</h1>
-      <p className="text-dark">{postDate.toLocaleDateString()}</p>
+      <h1 className="text-3xl font-bold">{post.data.title}</h1>
+      <p className="">{postDate.toLocaleDateString()} - {author}</p>
       <article className="max-w-5xl prose prose-sky">
         <Markdown>{post.content}</Markdown>
       </article>
