@@ -1,20 +1,17 @@
 import Link from "next/link";
 import "./globals.css";
 import { Metadata } from "next";
-import Image from "next/image";
-import { SiChessdotcom } from "react-icons/si";
-import { FaPencilAlt } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: {
-    default: "Productivity in Code",
-    template: `%s | Productivity in Code`,
+    default: "Dev Narratives",
+    template: `%s | Dev Narratives`,
   },
   description:
-    "A comprehensive platform that combines all the apps you need for your personal and work needs in one place.",
+    "Tech insights from the trenches.",
   icons: {
-    icon: "./icon.ico",
-    shortcut: "./icon.ico",
+    icon: "./favicon.ico",
+    shortcut: "./favicon.ico",
   },
 };
 
@@ -25,7 +22,7 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="px-6 py-4">
+      <div className="px-6 py-4 shadow-md">
         <Link href="/">
           <h1 className="inline p-1 text-2xl font-bold">
             Dev Narratives
