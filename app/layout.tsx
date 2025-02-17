@@ -40,7 +40,7 @@ export default function RootLayout({
             {header}
           </header>
           <div className="flex flex-row">
-            <div className="flex-grow max-w-5xl p-6 mx-auto z-30">
+            <div className="flex-grow p-6 mx-auto z-30">
               {children}
             </div>
           </div>

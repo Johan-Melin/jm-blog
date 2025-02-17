@@ -1,14 +1,13 @@
 ---
-title: "LeetCode 1122. Relative Sort Array"
+title: "Top retail companies’ SEO and Performance insights"
 subtitle: "Given two arrays, sort the elements of the first so that the relative ordering of items are the same as in the second array."
 published: true
-date: "2024-06-11"
-tags: [Array, Hash Table, Sorting, Counting Sort]
+date: "2025-02-18"
+tags: [SEO, Performance]
 time: "10"
-image: "1122.webp"
+image: "laptop_lighthouse.webp"
 animImage: "post1.webp"
-alt: "Illustration showing the number 1122 against a brick wall."
-imageBlurData: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACMQAAEDAwQCAwAAAAAAAAAAAAECAxEAEiEEBSIxBqEUUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGhEAAgIDAAAAAAAAAAAAAAAAAQIAEgMEEf/aAAwDAQACEQMRAD8AiM+OaZ3Zhqfmtpfi6xSgIM8RBzkzGPdZ86hLZKC4QU4i7r1RVLUdtacKjfD3Kc4BjP5SikJuPEd/VMdQYfTyOlrHs//Z"
+alt: "Digital illustration of a laptop displaying a Google Lighthouse audit report with performance metrics such as speed scores, SEO ratings, and accessibility scores. Around the laptop, floating icons and logos of major retail companies represent different websites being analyzed."
 ---
 
 ## OVERVIEW
