@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.prose table tbody tr {
+    border-bottom: 1px solid #ccc; 
+}
+
+.prose table tbody tr:nth-of-type(odd) {
+    background-color: #f0f0f0;
+}
+
+.prose table tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.prose table th,
+.prose table td {
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem; 
+  padding-top: 0.25rem; 
+  padding-bottom: 0.25rem; 
+}

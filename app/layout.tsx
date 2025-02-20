@@ -34,7 +34,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-light text-dark">
+      <body className="bg-white text-dark">
         <div className="flex flex-col min-h-screen">
           <header className="z-30">
             {header}
